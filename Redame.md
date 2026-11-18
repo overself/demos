@@ -28,16 +28,3 @@
     go mod vendor
     ~~~
 
-## 3、生成docs
-~~~ commandline
-swag init -g ./app/server/main.go -o ./docs --parseDependency --parseInternal --parseDepth 5 --generatedTime=false
-
-swag init -g ./app/server/main.go -o ./docs --parseDependency --parseDepth 5 --generatedTime=false
-~~~
-
-## 4、构架和运行工程
-~~~ commandline
-go build ./...
-go run ./app/server
-go run ./... # 自动搜索项目main
-~~~
